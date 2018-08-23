@@ -17,6 +17,7 @@ class PageItemText: UILabel {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        self.numberOfLines = 0
         initializeLabel()
     }
     
