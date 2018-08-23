@@ -15,6 +15,7 @@ class NotebookCoverViewController : UIViewController {
     @IBOutlet weak var notebookCreationInfoLabel: UILabel!
     
     override func viewDidLoad() {
+        print("NotebookCoverViewController did load")
         super.viewDidLoad()
         notebookTitleLabel.text = ""
         notebookOwnerLabel.text = ""
@@ -22,8 +23,9 @@ class NotebookCoverViewController : UIViewController {
     }
     
     override func viewWillAppear(_: Bool) {
+        print("NotebookCoverViewController will appear")
         super.viewWillAppear(true)
-        NotificationCenter.default.addObserver(self, selector: #selector(onNotification(notification:)), name: MainViewController.notebookNotifier, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(onNotifiedWebServiceResult(notification:)), name: MainViewController.onWebServiceResult, object: nil)
     }
     
     func dateHandler(fromJSON: String) -> String {
@@ -36,8 +38,7 @@ class NotebookCoverViewController : UIViewController {
     }
 
     
-    @objc func onNotification(notification:Notification) {
-        print("notebook cover notified")
+    @objc func onNotifiedWebServiceResult(notification:Notification) {
         let n = notification.userInfo!["notebook"] as? MoleskineNotebook
         notebookTitleLabel.text = n?.title
         let name = (n?.owner.firstName)! + " " + (n?.owner.lastName)!
@@ -50,6 +51,7 @@ class NotebookCoverViewController : UIViewController {
         Last Updated: \(updatedFormattedDateString)
         Created: \(createdFormattedDateString)
         """
+        NotificationCenter.default.post(name: MainViewController.onWebServiceParse, object: nil, userInfo: ["pages":n?.pages ?? []])
     }
     
     

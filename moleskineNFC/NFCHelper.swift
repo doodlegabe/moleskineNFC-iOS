@@ -36,8 +36,10 @@ class NFCHelper: NSObject, NFCNDEFReaderSessionDelegate{
             text = String(format: "%@%@", text, parsedPayload.text)
         } else if let parsedPayload = parsedPayload as? VYNFCNDEFURIPayload {
             
-            //FIXME: check for curt.li
+            //FIXME: Call to Selinko Web Service for UUID
+            
             let aSelinkoTag = SelinkoTag(uri: parsedPayload.uriString, notebookId: 1, uuid: "")
+            NotificationCenter.default.post(name: MainViewController.onNFCScan, object: nil, userInfo: ["tag":aSelinkoTag])
             aSelinkoTag.getCorrespondingNotebook()
             isSelinko = true
             

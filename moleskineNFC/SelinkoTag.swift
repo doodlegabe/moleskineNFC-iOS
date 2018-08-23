@@ -47,7 +47,7 @@ class SelinkoTag: NSObject, Codable {
                 do {
                     let filteredResponse = try moyaResponse.filterSuccessfulStatusCodes()
                     self.notebook = try filteredResponse.map(MoleskineNotebook.self)
-                    NotificationCenter.default.post(name: MainViewController.notebookNotifier, object: nil, userInfo: ["notebook":self.notebook])
+                    NotificationCenter.default.post(name: MainViewController.onWebServiceResult, object: nil, userInfo: ["notebook":self.notebook])
                 }
                 catch let error {
                     // Here we get either statusCode error or jsonMapping error.

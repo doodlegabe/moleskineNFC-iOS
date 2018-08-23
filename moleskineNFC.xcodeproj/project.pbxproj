@@ -34,6 +34,8 @@
 		DAC7F13B212310530030062E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAC7F13A212310530030062E /* Assets.xcassets */; };
 		DAC7F13E212310530030062E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAC7F13C212310530030062E /* LaunchScreen.storyboard */; };
 		DAC7F1472123117F0030062E /* NFCHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC7F1462123117F0030062E /* NFCHelper.swift */; };
+		DAF0C943212EE8DC003686E2 /* PageItemText.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF0C942212EE8DC003686E2 /* PageItemText.swift */; };
+		DAF0C947212EF317003686E2 /* writing.png in Resources */ = {isa = PBXBuildFile; fileRef = DAF0C946212EF317003686E2 /* writing.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +71,8 @@
 		DAC7F13F212310530030062E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DAC7F145212310FB0030062E /* moleskineNFC.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = moleskineNFC.entitlements; sourceTree = "<group>"; };
 		DAC7F1462123117F0030062E /* NFCHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NFCHelper.swift; sourceTree = "<group>"; };
+		DAF0C942212EE8DC003686E2 /* PageItemText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageItemText.swift; sourceTree = "<group>"; };
+		DAF0C946212EF317003686E2 /* writing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = writing.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,7 @@
 		DAAD9504212B13BE00B424A5 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				DAF0C946212EF317003686E2 /* writing.png */,
 				DAAD9532212C266500B424A5 /* notebook.png */,
 				DAAD9524212B299A00B424A5 /* leather.jpg */,
 				DAAD9522212B1CEE00B424A5 /* Moleskine Brand.png */,
@@ -165,6 +170,7 @@
 				DAAD952C212B3A5000B424A5 /* PageDetailViewController.swift */,
 				DAAD952E212C20CB00B424A5 /* NotebookCoverViewController.swift */,
 				DAAD9536212C672300B424A5 /* User.swift */,
+				DAF0C942212EE8DC003686E2 /* PageItemText.swift */,
 			);
 			path = moleskineNFC;
 			sourceTree = "<group>";
@@ -235,6 +241,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAAD9533212C266500B424A5 /* notebook.png in Resources */,
+				DAF0C947212EF317003686E2 /* writing.png in Resources */,
 				DAAD951C212B17BE00B424A5 /* page_capture_icon@180.png in Resources */,
 				DAAD94FF212B13AD00B424A5 /* page_capture_icon.png in Resources */,
 				DAC7F13E212310530030062E /* LaunchScreen.storyboard in Resources */,
@@ -309,6 +316,7 @@
 				DAAD952F212C20CB00B424A5 /* NotebookCoverViewController.swift in Sources */,
 				DA15887F2125932B0092A95E /* MoleskineNotebook.swift in Sources */,
 				DA15887D212591E70092A95E /* SelinkoTag.swift in Sources */,
+				DAF0C943212EE8DC003686E2 /* PageItemText.swift in Sources */,
 				DAC7F136212310520030062E /* MainViewController.swift in Sources */,
 				DAC7F1472123117F0030062E /* NFCHelper.swift in Sources */,
 				DAAD952B212B39D300B424A5 /* PageBrowserController.swift in Sources */,
