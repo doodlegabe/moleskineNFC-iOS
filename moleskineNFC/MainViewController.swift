@@ -9,9 +9,11 @@
 import UIKit
 
 class MainViewController: UIViewController {
-    
     let helper = NFCHelper()
-    static let notebookNotifier = Notification.Name("notifyNotebook")
+    static let onNFCScan = Notification.Name("notifyNFCScan")
+    static let onWebServiceResult = Notification.Name("notifyWebServiceResult")
+    static let onWebServiceParse = Notification.Name("notifyWebServiceParse")
+    static let onReturnToMainScreen = Notification.Name("notifyReturnToMainScreen")
     
     @IBAction func scanButton(_ sender: UIButton) {
         didTapReadNFC()
