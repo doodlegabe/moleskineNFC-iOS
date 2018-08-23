@@ -1,0 +1,528 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DA158879212468CA0092A95E /* Pods_moleskineNFC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CFF8BA050795A0CF768332A /* Pods_moleskineNFC.framework */; };
+		DA15887B2124701E0092A95E /* WebConnectionProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA15887A2124701E0092A95E /* WebConnectionProvider.swift */; };
+		DA15887D212591E70092A95E /* SelinkoTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA15887C212591E70092A95E /* SelinkoTag.swift */; };
+		DA15887F2125932B0092A95E /* MoleskineNotebook.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA15887E2125932B0092A95E /* MoleskineNotebook.swift */; };
+		DAAD94FF212B13AD00B424A5 /* page_capture_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DAAD94F9212B13AD00B424A5 /* page_capture_icon.png */; };
+		DAAD9509212B153E00B424A5 /* page_capture_icon@60.png in Resources */ = {isa = PBXBuildFile; fileRef = DAAD9506212B153E00B424A5 /* page_capture_icon@60.png */; };
+		DAAD950D212B161100B424A5 /* page_capture_icon@40.png in Resources */ = {isa = PBXBuildFile; fileRef = DAAD950C212B161100B424A5 /* page_capture_icon@40.png */; };
+		DAAD9515212B170000B424A5 /* page_capture_icon@80.png in Resources */ = {isa = PBXBuildFile; fileRef = DAAD950F212B16FF00B424A5 /* page_capture_icon@80.png */; };
+		DAAD9516212B170000B424A5 /* page_capture_icon@58.png in Resources */ = {isa = PBXBuildFile; fileRef = DAAD9510212B16FF00B424A5 /* page_capture_icon@58.png */; };
+		DAAD9517212B170000B424A5 /* page_capture_icon@29.png in Resources */ = {isa = PBXBuildFile; fileRef = DAAD9511212B170000B424A5 /* page_capture_icon@29.png */; };
+		DAAD9518212B170000B424A5 /* page_capture_icon@87.png in Resources */ = {isa = PBXBuildFile; fileRef = DAAD9512212B170000B424A5 /* page_capture_icon@87.png */; };
+		DAAD951C212B17BE00B424A5 /* page_capture_icon@180.png in Resources */ = {isa = PBXBuildFile; fileRef = DAAD951A212B17BE00B424A5 /* page_capture_icon@180.png */; };
+		DAAD951D212B17BE00B424A5 /* page_capture_icon@120.png in Resources */ = {isa = PBXBuildFile; fileRef = DAAD951B212B17BE00B424A5 /* page_capture_icon@120.png */; };
+		DAAD9521212B1C3300B424A5 /* city notebooks-insieme_01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DAAD9520212B1C3300B424A5 /* city notebooks-insieme_01.jpg */; };
+		DAAD9523212B1CEE00B424A5 /* Moleskine Brand.png in Resources */ = {isa = PBXBuildFile; fileRef = DAAD9522212B1CEE00B424A5 /* Moleskine Brand.png */; };
+		DAAD9525212B299B00B424A5 /* leather.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DAAD9524212B299A00B424A5 /* leather.jpg */; };
+		DAAD952B212B39D300B424A5 /* PageBrowserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAD952A212B39D300B424A5 /* PageBrowserController.swift */; };
+		DAAD952D212B3A5000B424A5 /* PageDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAD952C212B3A5000B424A5 /* PageDetailViewController.swift */; };
+		DAAD952F212C20CB00B424A5 /* NotebookCoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAD952E212C20CB00B424A5 /* NotebookCoverViewController.swift */; };
+		DAAD9533212C266500B424A5 /* notebook.png in Resources */ = {isa = PBXBuildFile; fileRef = DAAD9532212C266500B424A5 /* notebook.png */; };
+		DAAD9537212C672300B424A5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAD9536212C672300B424A5 /* User.swift */; };
+		DAC7F134212310520030062E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC7F133212310520030062E /* AppDelegate.swift */; };
+		DAC7F136212310520030062E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC7F135212310520030062E /* MainViewController.swift */; };
+		DAC7F139212310520030062E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAC7F137212310520030062E /* Main.storyboard */; };
+		DAC7F13B212310530030062E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAC7F13A212310530030062E /* Assets.xcassets */; };
+		DAC7F13E212310530030062E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAC7F13C212310530030062E /* LaunchScreen.storyboard */; };
+		DAC7F1472123117F0030062E /* NFCHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC7F1462123117F0030062E /* NFCHelper.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3F557A4F13FAACD032058F70 /* Pods-moleskineNFC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-moleskineNFC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-moleskineNFC/Pods-moleskineNFC.debug.xcconfig"; sourceTree = "<group>"; };
+		45028044674B80DFBA569919 /* Pods-moleskineNFC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-moleskineNFC.release.xcconfig"; path = "Pods/Target Support Files/Pods-moleskineNFC/Pods-moleskineNFC.release.xcconfig"; sourceTree = "<group>"; };
+		8CFF8BA050795A0CF768332A /* Pods_moleskineNFC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_moleskineNFC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA15887A2124701E0092A95E /* WebConnectionProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebConnectionProvider.swift; sourceTree = "<group>"; };
+		DA15887C212591E70092A95E /* SelinkoTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelinkoTag.swift; sourceTree = "<group>"; };
+		DA15887E2125932B0092A95E /* MoleskineNotebook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoleskineNotebook.swift; sourceTree = "<group>"; };
+		DAAD94F9212B13AD00B424A5 /* page_capture_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = page_capture_icon.png; sourceTree = "<group>"; };
+		DAAD9506212B153E00B424A5 /* page_capture_icon@60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "page_capture_icon@60.png"; sourceTree = "<group>"; };
+		DAAD950C212B161100B424A5 /* page_capture_icon@40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "page_capture_icon@40.png"; sourceTree = "<group>"; };
+		DAAD950F212B16FF00B424A5 /* page_capture_icon@80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "page_capture_icon@80.png"; sourceTree = "<group>"; };
+		DAAD9510212B16FF00B424A5 /* page_capture_icon@58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "page_capture_icon@58.png"; sourceTree = "<group>"; };
+		DAAD9511212B170000B424A5 /* page_capture_icon@29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "page_capture_icon@29.png"; sourceTree = "<group>"; };
+		DAAD9512212B170000B424A5 /* page_capture_icon@87.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "page_capture_icon@87.png"; sourceTree = "<group>"; };
+		DAAD951A212B17BE00B424A5 /* page_capture_icon@180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "page_capture_icon@180.png"; sourceTree = "<group>"; };
+		DAAD951B212B17BE00B424A5 /* page_capture_icon@120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "page_capture_icon@120.png"; sourceTree = "<group>"; };
+		DAAD9520212B1C3300B424A5 /* city notebooks-insieme_01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "city notebooks-insieme_01.jpg"; sourceTree = "<group>"; };
+		DAAD9522212B1CEE00B424A5 /* Moleskine Brand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Moleskine Brand.png"; sourceTree = "<group>"; };
+		DAAD9524212B299A00B424A5 /* leather.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = leather.jpg; sourceTree = "<group>"; };
+		DAAD952A212B39D300B424A5 /* PageBrowserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageBrowserController.swift; sourceTree = "<group>"; };
+		DAAD952C212B3A5000B424A5 /* PageDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageDetailViewController.swift; sourceTree = "<group>"; };
+		DAAD952E212C20CB00B424A5 /* NotebookCoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotebookCoverViewController.swift; sourceTree = "<group>"; };
+		DAAD9532212C266500B424A5 /* notebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = notebook.png; sourceTree = "<group>"; };
+		DAAD9536212C672300B424A5 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		DAC7F130212310520030062E /* moleskineNFC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = moleskineNFC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAC7F133212310520030062E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DAC7F135212310520030062E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		DAC7F138212310520030062E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DAC7F13A212310530030062E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DAC7F13D212310530030062E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DAC7F13F212310530030062E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAC7F145212310FB0030062E /* moleskineNFC.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = moleskineNFC.entitlements; sourceTree = "<group>"; };
+		DAC7F1462123117F0030062E /* NFCHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NFCHelper.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DAC7F12D212310520030062E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA158879212468CA0092A95E /* Pods_moleskineNFC.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2733E74677DEE788AA176E01 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3F557A4F13FAACD032058F70 /* Pods-moleskineNFC.debug.xcconfig */,
+				45028044674B80DFBA569919 /* Pods-moleskineNFC.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AC1909ED6620EEB8D15AEDA9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8CFF8BA050795A0CF768332A /* Pods_moleskineNFC.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DAAD9504212B13BE00B424A5 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				DAAD9532212C266500B424A5 /* notebook.png */,
+				DAAD9524212B299A00B424A5 /* leather.jpg */,
+				DAAD9522212B1CEE00B424A5 /* Moleskine Brand.png */,
+				DAAD9520212B1C3300B424A5 /* city notebooks-insieme_01.jpg */,
+				DAAD9505212B13C700B424A5 /* Icon */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		DAAD9505212B13C700B424A5 /* Icon */ = {
+			isa = PBXGroup;
+			children = (
+				DAAD951B212B17BE00B424A5 /* page_capture_icon@120.png */,
+				DAAD951A212B17BE00B424A5 /* page_capture_icon@180.png */,
+				DAAD9511212B170000B424A5 /* page_capture_icon@29.png */,
+				DAAD9510212B16FF00B424A5 /* page_capture_icon@58.png */,
+				DAAD950F212B16FF00B424A5 /* page_capture_icon@80.png */,
+				DAAD9512212B170000B424A5 /* page_capture_icon@87.png */,
+				DAAD950C212B161100B424A5 /* page_capture_icon@40.png */,
+				DAAD9506212B153E00B424A5 /* page_capture_icon@60.png */,
+				DAAD94F9212B13AD00B424A5 /* page_capture_icon.png */,
+			);
+			path = Icon;
+			sourceTree = "<group>";
+		};
+		DAC7F127212310520030062E = {
+			isa = PBXGroup;
+			children = (
+				DAC7F145212310FB0030062E /* moleskineNFC.entitlements */,
+				DAC7F132212310520030062E /* moleskineNFC */,
+				DAC7F131212310520030062E /* Products */,
+				2733E74677DEE788AA176E01 /* Pods */,
+				AC1909ED6620EEB8D15AEDA9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DAC7F131212310520030062E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DAC7F130212310520030062E /* moleskineNFC.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DAC7F132212310520030062E /* moleskineNFC */ = {
+			isa = PBXGroup;
+			children = (
+				DAC7F133212310520030062E /* AppDelegate.swift */,
+				DAC7F135212310520030062E /* MainViewController.swift */,
+				DAC7F137212310520030062E /* Main.storyboard */,
+				DAC7F13A212310530030062E /* Assets.xcassets */,
+				DAAD9504212B13BE00B424A5 /* Assets */,
+				DAC7F13C212310530030062E /* LaunchScreen.storyboard */,
+				DAC7F13F212310530030062E /* Info.plist */,
+				DAC7F1462123117F0030062E /* NFCHelper.swift */,
+				DA15887C212591E70092A95E /* SelinkoTag.swift */,
+				DA15887E2125932B0092A95E /* MoleskineNotebook.swift */,
+				DA15887A2124701E0092A95E /* WebConnectionProvider.swift */,
+				DAAD952A212B39D300B424A5 /* PageBrowserController.swift */,
+				DAAD952C212B3A5000B424A5 /* PageDetailViewController.swift */,
+				DAAD952E212C20CB00B424A5 /* NotebookCoverViewController.swift */,
+				DAAD9536212C672300B424A5 /* User.swift */,
+			);
+			path = moleskineNFC;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DAC7F12F212310520030062E /* moleskineNFC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAC7F142212310530030062E /* Build configuration list for PBXNativeTarget "moleskineNFC" */;
+			buildPhases = (
+				5995D68BEBE0F8CBDA09E4ED /* [CP] Check Pods Manifest.lock */,
+				DAC7F12C212310520030062E /* Sources */,
+				DAC7F12D212310520030062E /* Frameworks */,
+				DAC7F12E212310520030062E /* Resources */,
+				1D9177528C377210037C7B3B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = moleskineNFC;
+			productName = moleskineNFC;
+			productReference = DAC7F130212310520030062E /* moleskineNFC.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DAC7F128212310520030062E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Gabriel Walsh";
+				TargetAttributes = {
+					DAC7F12F212310520030062E = {
+						CreatedOnToolsVersion = 9.4.1;
+						SystemCapabilities = {
+							com.apple.NearFieldCommunicationTagReading = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = DAC7F12B212310520030062E /* Build configuration list for PBXProject "moleskineNFC" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DAC7F127212310520030062E;
+			productRefGroup = DAC7F131212310520030062E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DAC7F12F212310520030062E /* moleskineNFC */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DAC7F12E212310520030062E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAAD9533212C266500B424A5 /* notebook.png in Resources */,
+				DAAD951C212B17BE00B424A5 /* page_capture_icon@180.png in Resources */,
+				DAAD94FF212B13AD00B424A5 /* page_capture_icon.png in Resources */,
+				DAC7F13E212310530030062E /* LaunchScreen.storyboard in Resources */,
+				DAAD9521212B1C3300B424A5 /* city notebooks-insieme_01.jpg in Resources */,
+				DAAD9517212B170000B424A5 /* page_capture_icon@29.png in Resources */,
+				DAAD9518212B170000B424A5 /* page_capture_icon@87.png in Resources */,
+				DAAD9516212B170000B424A5 /* page_capture_icon@58.png in Resources */,
+				DAAD9509212B153E00B424A5 /* page_capture_icon@60.png in Resources */,
+				DAAD9525212B299B00B424A5 /* leather.jpg in Resources */,
+				DAAD9523212B1CEE00B424A5 /* Moleskine Brand.png in Resources */,
+				DAAD951D212B17BE00B424A5 /* page_capture_icon@120.png in Resources */,
+				DAAD9515212B170000B424A5 /* page_capture_icon@80.png in Resources */,
+				DAC7F13B212310530030062E /* Assets.xcassets in Resources */,
+				DAC7F139212310520030062E /* Main.storyboard in Resources */,
+				DAAD950D212B161100B424A5 /* page_capture_icon@40.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1D9177528C377210037C7B3B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-moleskineNFC/Pods-moleskineNFC-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/VYNFCKit/VYNFCKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VYNFCKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-moleskineNFC/Pods-moleskineNFC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5995D68BEBE0F8CBDA09E4ED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-moleskineNFC-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DAC7F12C212310520030062E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAAD952D212B3A5000B424A5 /* PageDetailViewController.swift in Sources */,
+				DAAD952F212C20CB00B424A5 /* NotebookCoverViewController.swift in Sources */,
+				DA15887F2125932B0092A95E /* MoleskineNotebook.swift in Sources */,
+				DA15887D212591E70092A95E /* SelinkoTag.swift in Sources */,
+				DAC7F136212310520030062E /* MainViewController.swift in Sources */,
+				DAC7F1472123117F0030062E /* NFCHelper.swift in Sources */,
+				DAAD952B212B39D300B424A5 /* PageBrowserController.swift in Sources */,
+				DAC7F134212310520030062E /* AppDelegate.swift in Sources */,
+				DAAD9537212C672300B424A5 /* User.swift in Sources */,
+				DA15887B2124701E0092A95E /* WebConnectionProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DAC7F137212310520030062E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAC7F138212310520030062E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DAC7F13C212310530030062E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAC7F13D212310530030062E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DAC7F140212310530030062E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DAC7F141212310530030062E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DAC7F143212310530030062E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F557A4F13FAACD032058F70 /* Pods-moleskineNFC.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = moleskineNFC.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A3QT3RRV5J;
+				INFOPLIST_FILE = moleskineNFC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.brotherclone.moleskineNFC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		DAC7F144212310530030062E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45028044674B80DFBA569919 /* Pods-moleskineNFC.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = moleskineNFC.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A3QT3RRV5J;
+				INFOPLIST_FILE = moleskineNFC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.brotherclone.moleskineNFC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DAC7F12B212310520030062E /* Build configuration list for PBXProject "moleskineNFC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAC7F140212310530030062E /* Debug */,
+				DAC7F141212310530030062E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAC7F142212310530030062E /* Build configuration list for PBXNativeTarget "moleskineNFC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAC7F143212310530030062E /* Debug */,
+				DAC7F144212310530030062E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DAC7F128212310520030062E /* Project object */;
+}
