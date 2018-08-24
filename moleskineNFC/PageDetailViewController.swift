@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 protocol GetsDataFromPage {
     var pageData: Page {get set}
@@ -48,10 +49,9 @@ class PageDetailViewController : UIViewController, GetsDataFromPage {
                 counter += 1
             }
             if !aPageItem.image.isEmpty {
-                // FIXME: load from url
-                //let aUrl = URL(string:aPageItem.image)
-                let anImageFile: UIImage = UIImage(named: "writing.png")!
-                let anImage: UIImageView = UIImageView(image:anImageFile)
+                let aUrl = URL(string:aPageItem.image)
+                let anImage: ImageView = ImageView()
+                anImage.kf.setImage(with: aUrl!)
                 anImage.contentMode = .scaleAspectFit
                 anImage.frame = CGRect(x: 10, y: (100*counter), width: 200, height: 100)
                 self.view.addSubview(anImage)
@@ -64,5 +64,7 @@ class PageDetailViewController : UIViewController, GetsDataFromPage {
         pageData = page
     }
 }
+
+
 
 

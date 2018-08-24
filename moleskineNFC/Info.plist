@@ -45,5 +45,10 @@
 	</array>
 	<key>NFCReaderUsageDescription</key>
 	<string>Demo Selinko Tags</string>
+    <key>NSAppTransportSecurity</key>
+    <dict>
+        <key>NSAllowsArbitraryLoads</key>
+        <true/>
+    </dict>
 </dict>
 </plist>
