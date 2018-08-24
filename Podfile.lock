@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (4.7.3)
+  - Kingfisher (4.8.1)
   - Moya (11.0.2):
     - Moya/Core (= 11.0.2)
   - Moya/Core (11.0.2):
@@ -9,22 +10,25 @@ PODS:
   - VYNFCKit (0.3.1)
 
 DEPENDENCIES:
+  - Kingfisher (~> 4.0)
   - Moya (~> 11.0)
   - VYNFCKit (~> 0.3.1)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - Kingfisher
     - Moya
     - Result
     - VYNFCKit
 
 SPEC CHECKSUMS:
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  Kingfisher: 868c1149679a7ab6869be118faa9b5aed154aaf0
   Moya: a725035953bc1c0eb1be505ab903984501d82440
   Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
   VYNFCKit: 0bedda99e74ddaf9fcd6af2db20c3a5962657b77
 
-PODFILE CHECKSUM: ce92e1c073a9b1a719c1ededc15836c544b72e1c
+PODFILE CHECKSUM: 655c0f6bc20e9071114ce836de4dbfd2656c06fb
 
 COCOAPODS: 1.5.3

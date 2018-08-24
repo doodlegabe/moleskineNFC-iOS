@@ -38,11 +38,9 @@ extension MoleskineNFCWebProvider: TargetType {
         switch self {
         case .pulse:
             return .get
-        case .createTag(let uri, let uuid, let notebookId):
-            print(uri, uuid, notebookId)
+        case .createTag( _, _, _ ):
             return .post
-        case .insideNotebook(let uri):
-            print(uri)
+        case .insideNotebook( _ ):
             return .post
         }
     }
@@ -62,11 +60,9 @@ extension MoleskineNFCWebProvider: TargetType {
         switch self {
         case .pulse:
             return .successCodes
-        case .createTag(let uri, let uuid, let notebookId):
-             print(uri, uuid, notebookId)
+        case .createTag( _, _, _):
             return .successCodes
-        case .insideNotebook(let uri):
-            print(uri)
+        case .insideNotebook( _ ):
             return .successCodes
         }
     }
@@ -87,7 +83,6 @@ extension MoleskineNFCWebProvider: TargetType {
         case .insideNotebook(let uri):
             print(uri)
             do{
-                //let aDate : Date = Date()
                 let aDate : String = "01/01/2001"
                 let aPicture : String  = "http://www.placekitten.io/100/100"
                 let sampleNotebook = MoleskineNotebook(id: 1,
