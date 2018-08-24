@@ -22,6 +22,10 @@ class NotebookCoverViewController : UIViewController {
         notebookCreationInfoLabel.text = ""
     }
     
+    @IBAction func backButton(_ sender: Any) {
+        NotificationCenter.default.post(name: MainViewController.onReturnToMainScreen, object: nil, userInfo: ["fromScreen": self])
+    }
+    
     override func viewWillAppear(_: Bool) {
         print("NotebookCoverViewController will appear")
         super.viewWillAppear(true)

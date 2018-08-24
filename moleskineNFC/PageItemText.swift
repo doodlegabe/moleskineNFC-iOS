@@ -23,8 +23,6 @@ class PageItemText: UILabel {
     
     func initializeLabel() {
         self.textAlignment = .left
-        self.font = UIFont(name: "Halvetica", size: 17)
         self.textColor = UIColor.black
-        
     }
 }
