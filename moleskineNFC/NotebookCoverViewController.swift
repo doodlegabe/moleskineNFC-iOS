@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import PopupDialog
 
 class NotebookCoverViewController : UIViewController {
     
@@ -27,7 +28,6 @@ class NotebookCoverViewController : UIViewController {
     }
     
     override func viewWillAppear(_: Bool) {
-        print("NotebookCoverViewController will appear")
         super.viewWillAppear(true)
         NotificationCenter.default.addObserver(self, selector: #selector(onNotifiedWebServiceResult(notification:)), name: MainViewController.onWebServiceResult, object: nil)
     }
@@ -43,19 +43,31 @@ class NotebookCoverViewController : UIViewController {
 
     
     @objc func onNotifiedWebServiceResult(notification:Notification) {
-        let n = notification.userInfo!["notebook"] as? MoleskineNotebook
-        notebookTitleLabel.text = n?.title
-        let name = (n?.owner.firstName)! + " " + (n?.owner.lastName)!
-        notebookOwnerLabel.text = "created by \(name)"
-        let createdDateString = n?.createdAt
-        let updatedDateString = n?.updatedAt
-        let createdFormattedDateString = dateHandler(fromJSON: createdDateString!)
-        let updatedFormattedDateString = dateHandler(fromJSON: updatedDateString!)
-        notebookCreationInfoLabel.text = """
-        Last Updated: \(updatedFormattedDateString)
-        Created: \(createdFormattedDateString)
-        """
-        NotificationCenter.default.post(name: MainViewController.onWebServiceParse, object: nil, userInfo: ["pages":n?.pages ?? []])
+        print(notification.userInfo!)
+        if notification.userInfo!["error"] == nil {
+            let n = notification.userInfo!["notebook"] as? MoleskineNotebook
+            notebookTitleLabel.text = n?.title
+            let name = (n?.owner.firstName)! + " " + (n?.owner.lastName)!
+            notebookOwnerLabel.text = "created by \(name)"
+            let createdDateString = n?.createdAt
+            let updatedDateString = n?.updatedAt
+            let createdFormattedDateString = dateHandler(fromJSON: createdDateString!)
+            let updatedFormattedDateString = dateHandler(fromJSON: updatedDateString!)
+            notebookCreationInfoLabel.text = """
+            Last Updated: \(updatedFormattedDateString)
+            Created: \(createdFormattedDateString)
+            """
+            NotificationCenter.default.post(name: MainViewController.onWebServiceParse, object: nil, userInfo: ["pages":n?.pages ?? []])
+        }else{
+            print("404")
+            let popup = PopupDialog(title: "There was a problem retrieving your notebook", message: notification.userInfo!["error"] as? String)
+            let tryAgainButton = CancelButton(title: "Try Again") {
+                    NotificationCenter.default.post(name: MainViewController.onReturnToMainScreen, object: nil, userInfo: ["fromScreen": self])
+            }
+            popup.addButtons([tryAgainButton])
+            self.present(popup, animated: true, completion: nil)
+
+        }
     }
     
     

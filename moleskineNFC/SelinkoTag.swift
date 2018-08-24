@@ -14,7 +14,7 @@ class SelinkoTag: NSObject, Codable {
     var uuid: String
     var notebookId: Int
     var notebook: MoleskineNotebook
-    
+
     init(uri: String, notebookId: Int, uuid: String) {
         self.uri = uri
         self.notebookId = notebookId
@@ -50,11 +50,12 @@ class SelinkoTag: NSObject, Codable {
                     NotificationCenter.default.post(name: MainViewController.onWebServiceResult, object: nil, userInfo: ["notebook":self.notebook])
                 }
                 catch let error {
-                    // Here we get either statusCode error or jsonMapping error.
-                    print(error)
+                    print("json error")
+                    NotificationCenter.default.post(name: MainViewController.onWebServiceResult, object: nil, userInfo: ["error": error])
                 }
             case let .failure(error):
-                print(error)
+                print("404")
+                NotificationCenter.default.post(name: MainViewController.onWebServiceResult, object: nil, userInfo: ["error": error])
             }
         }
         

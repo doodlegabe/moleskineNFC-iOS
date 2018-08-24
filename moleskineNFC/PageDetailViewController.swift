@@ -43,7 +43,7 @@ class PageDetailViewController : UIViewController, GetsDataFromPage {
         for aPageItem in pageItems {
             //FIXME : Responsive
             if !aPageItem.body.isEmpty {
-                pageItemLabel = PageItemText(frame: CGRect(x: 10, y: (100*counter), width: 200, height: 100))
+                pageItemLabel = PageItemText(frame: CGRect(x: 10, y: (100*counter)+20, width: 200, height: 100))
                 pageItemLabel.text = aPageItem.body
                 self.view.addSubview(pageItemLabel)
                 counter += 1
@@ -53,7 +53,7 @@ class PageDetailViewController : UIViewController, GetsDataFromPage {
                 let anImage: ImageView = ImageView()
                 anImage.kf.setImage(with: aUrl!)
                 anImage.contentMode = .scaleAspectFit
-                anImage.frame = CGRect(x: 10, y: (100*counter), width: 200, height: 100)
+                anImage.frame = CGRect(x: 10, y: (100*counter)+20, width: 200, height: 100)
                 self.view.addSubview(anImage)
                 counter += 1
             }
