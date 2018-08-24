@@ -15,10 +15,23 @@ protocol GetsDataFromPage {
 
 class PageDetailViewController : UIViewController, GetsDataFromPage {
     
-    var pageData: Page = Page(id:0, number:0, notebookId:0, createdAt: "", updatedAt: "", pageItems: [PageItem(id: 0, createdAt: "", updatedAt: "", pageId:0, body:"", image:"")])
-    
+    var pageData: Page = Page(id:0,
+                              number:0,
+                              notebookId:0,
+                              createdAt: "",
+                              updatedAt: "",
+                              pageItems: [PageItem(id: 0,
+                                                   createdAt: "",
+                                                   updatedAt: "",
+                                                   pageId:0,
+                                                   body:"",
+                                                   image:"")])
     
     @IBOutlet weak var pageTitleLabel: UILabel!
+    
+    @IBAction func backButton(_ sender: Any) {
+        NotificationCenter.default.post(name: MainViewController.onReturnToMainScreen, object: nil, userInfo: ["fromScreen": self])
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

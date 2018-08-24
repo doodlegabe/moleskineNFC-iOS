@@ -68,6 +68,9 @@ class PageBrowserController: UIPageViewController {
     
     @objc func onNotifiedReturnToMainScreen(notification:Notification) {
         print("PageBrowserController onNotifiedReturnToMainScreen")
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "MainViewController") as! MainViewController
+        self.present(vc, animated: true, completion: nil)
     }
     
     func scrollToViewController(index newIndex: Int) {
